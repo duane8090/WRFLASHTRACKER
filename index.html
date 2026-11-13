@@ -624,7 +624,7 @@
             cdOverlay.textContent = formatTime(r.remaining);
 
             var readyAt = formatTime(gameSeconds + r.remaining);
-            statusEl.textContent = "UP @ " + readyAt;
+            statusEl.textContent = readyAt;
             activeCallouts.push(r.shortName + " F " + readyAt);
           } else {
             card.classList.remove("active");
